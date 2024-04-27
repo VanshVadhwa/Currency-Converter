@@ -1,0 +1,103 @@
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.currency-converter {
+  padding-top: 50px;
+  border: 2px solid #343a40; /* Dark border color */
+  border-radius: 10px;
+}
+
+.text-hover:hover { /* Added hover effect */
+  color: #941036; /* Change to desired hover color */
+}
+
+.card {
+  margin-top: 0;
+  border: none;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-control {
+  border-radius: 20px;
+  transition: border-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.animated-dropdown {
+  transition: border-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.animated-dropdown:focus {
+  border-color: #80bdff; /* Change border color on focus */
+}
+
+/* Custom dropdown arrow */
+.selectpicker {
+  background-image: url("dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+/* Adjust the arrow position */
+.selectpicker::-ms-expand {
+  display: none;
+}
+
+/* Hide the default arrow in IE */
+.selectpicker option {
+  color: #000;
+}
+
+.currency-flag {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.currency-symbol {
+  margin-right: 5px;
+}
+
+/* Add animation for dropdowns */
+@keyframes dropdownOpen {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dropdownClose {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+.animated-dropdown {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-dropdown.open {
+  animation-name: dropdownOpen;
+}
+
+.animated-dropdown.close {
+  animation-name: dropdownClose;
+}
