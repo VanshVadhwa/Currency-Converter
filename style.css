@@ -3,6 +3,10 @@ body {
   color: #212529;
 }
 
+.container {
+  margin-top: 7vh;
+}
+
 .currency-converter {
   padding-top: 50px;
   border: 2px solid #343a40; /* Dark border color */
